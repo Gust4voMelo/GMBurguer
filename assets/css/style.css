@@ -13,6 +13,7 @@
   --bg-color: #141414;
   --f-color: #FFF;
   --orange: #FE6A0F;
+  --hover-color: #999;
 }
 
 body{
@@ -26,7 +27,7 @@ body{
   width: 100%;
   margin: auto;
   max-width: 120rem;
-  padding: 2rem 0;
+  padding: 0 2rem;
 }
 
 .logo a{
@@ -38,4 +39,73 @@ body{
 
 .logo a span{
   color: var(--orange);
+}
+
+/* HEADER */
+header .container{
+  display: flex;
+  align-items: center;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  gap: 5rem;
+}
+
+header nav{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+header nav .leftside{
+  display: flex;
+  flex: 1;
+}
+header nav li{
+  margin: 0 3rem;
+}
+header nav li a{
+  color: var(--f-color);
+  text-decoration: none;
+}
+header nav li a:hover{
+  color: var(--hover-color);
+}
+header nav .button{
+  display: block;
+  border: 0.1rem solid #FFF;
+  padding: 1.5rem 3rem;
+  border-radius: 0.5rem;
+  color: var(--f-color);
+  text-decoration: none;
+}
+header nav .button:hover{
+  color: var(--hover-color);
+  border-color: var(--hover-color);
+}
+
+header .menu{
+  display: none;
+  flex: 1;
+  justify-content: flex-end;
+}
+header .menu-icon{
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+header .menu-icon div{
+  height: 0.6rem;
+  background-color: #FFF;
+}
+
+@media (max-width: 820px) {
+  header nav{
+    display: none;
+  }
+  header .menu{
+    display: flex;
+  }
 }
