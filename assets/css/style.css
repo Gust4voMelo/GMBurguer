@@ -12,6 +12,7 @@
   font-size: 62.5%;
   --bg-color: #141414;
   --f-color: #FFF;
+  --orange: #FE6A0F;
 }
 
 body{
@@ -26,4 +27,15 @@ body{
   margin: auto;
   max-width: 120rem;
   padding: 2rem 0;
+}
+
+.logo a{
+  font-family: 'Calistoga';
+  font-size: 3.6rem;
+  color: var(--f-color);
+  text-decoration: none;
+}
+
+.logo a span{
+  color: var(--orange);
 }
